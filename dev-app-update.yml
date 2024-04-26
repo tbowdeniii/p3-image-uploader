@@ -1,0 +1,3 @@
+provider: keygen
+  url: https://api.keygen.sh/v1/accounts/c98a83f6-1b57-4fae-adc0-ca2b072d2408/releases
+updaterCacheDirName: aws-image-uploader-updater

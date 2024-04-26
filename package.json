@@ -1,0 +1,50 @@
+{
+  "name": "p3-image-uploader",
+  "version": "1.0.4",
+  "description": "Image Compression and Uploading Tool for AWS S3",
+  "main": "./out/main/index.js",
+  "author": "p3pricetags.com",
+  "homepage": "https://p3pricetags.com",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "config": "electron-vite --config electron.vite.config.mjs",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win --publish always",
+    "2build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux",
+    "help": "set KEYGEN_TOKEN=\"prod-05a0f7c1cd9f07101d1a6fef9f0d442d9891e0fed6d60bcc3753c955831b63e7v3\""
+  },
+  "build": {
+    "publish": {
+      "provider": "keygen",
+      "account": "c98a83f6-1b57-4fae-adc0-ca2b072d2408",
+      "product": "a8e8922a-3fb8-4dbe-82b6-3e6f2eab8b26",
+      "channel": "stable"
+    }
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.525.0",
+    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/utils": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "electron-store": "^8.2.0",
+    "electron-updater": "^6.1.7",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.2",
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "vite": "^5.0.12"
+  }
+}
