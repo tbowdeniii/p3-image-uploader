@@ -34,7 +34,5 @@ $ npm run build:mac
 # For Linux
 $ npm run build:linux
 ```
-## Appendix
 
-Any additional information goes here
 
