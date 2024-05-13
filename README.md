@@ -1,6 +1,8 @@
 # aws-image-uploader
 
-A minimal Electron application with JavaScript
+An electron application built to streamline the process of compressing and uploading images to an AWS S3 Bucket. In addition, the application returns Cloudfront URLs to the user. 
+
+Image compression is handled using [Sharp](https://sharp.pixelplumbing.com/)
 
 ## Recommended IDE Setup
 
